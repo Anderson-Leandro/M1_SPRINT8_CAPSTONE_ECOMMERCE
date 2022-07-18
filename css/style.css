@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1603px;
+}
+
+header {
+    background-color: white;
+    box-shadow: 0px 4px 30px -10px rgba(0, 0, 0, 0.25);
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+header div h1 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 24px;
+    color: #292929;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.menuNav {
+    justify-content: flex-end;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.menuNav a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #242424;
+    height: 18px;
+
+}
+
+.menuNav a:hover {
+    font-weight: 600;
+    color: #292929;
+}
+
+.colunas {
+    display: flex;
+    margin-top: 52px;
+    justify-content: space-between;
+}
+
+.vitrine {
+    width: 70%;
+}
+
+.lista {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.itemLista {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #F5F5F5;
+}
+
+.itemLista:hover {
+    border-color: #37268C;
+}
+
+.containerImg {
+    display: flex;
+    width: 296px;
+    height: 154px;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F5F5;
+
+}
+
+.containerImg img:hover {
+    transform: scale(1.10);
+}
+
+.dadosProduto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 296px;
+    height: 254px;
+    background-color: white;
+    padding: 20px 15px;
+}
+
+.categoria {
+    background-color: #2E245E;
+    width: max-content;
+    padding: 5px 5px;
+    font-weight: 400;
+    font-size: 12px;
+    color: white;
+}
+
+.nomeProduto {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #292929;
+}
+
+.descProduto {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #242424;
+}
+
+.preco {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2E245E;
+}
+
+.btnAdicionarCarrinho {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #242424;
+    border: none;
+    background-color: white;
+    width: max-content;
+}
+
+.btnAdicionarCarrinho:hover {
+    color: #2E245E;
+    text-decoration-line: underline;
+}
+
+aside {
+    width: 29%;
+}
+
+.areaDePesquisa {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 30px;
+}
+
+.pesquisa {
+    background: #F5F5F5;
+    border: 1px solid #F5F5F5;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.btnPesquisa {
+    width: 96px;
+    height: 50px;
+    background-color: #37268C;
+    color: white;
+    border: 1px solid #37268C;
+}
+
+.btnPesquisa:hover {
+    background-color: #2E245E;
+}
+
+
+.tituloCarrinho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: #37268C;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.carrinhoDeCompras {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #F5F5F5;
+    width: 100%;
+    height: 214px;
+
+}
+
+.carrinhoDeCompras h2 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;
+    color: #292929;
+}
+
+.carrinhoDeCompras p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #242424;
+}
