@@ -12,6 +12,8 @@
 .container {
     margin: 0 auto;
     max-width: 1603px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 header {
@@ -63,10 +65,10 @@ header div h1 {
 }
 
 .vitrine {
-    width: 70%;
+    width: 100%;
 }
 
-.lista {
+.listaProduto {
     display: flex;
     gap: 40px;
     flex-wrap: wrap;
@@ -144,6 +146,7 @@ header div h1 {
     border: none;
     background-color: white;
     width: max-content;
+
 }
 
 .btnAdicionarCarrinho:hover {
@@ -152,7 +155,7 @@ header div h1 {
 }
 
 aside {
-    width: 29%;
+    width: 410px;
 }
 
 .areaDePesquisa {
@@ -194,7 +197,14 @@ aside {
     line-height: 24px;
 }
 
-.carrinhoDeCompras {
+.listaCarrinho {
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #F5F5F5;
+}
+
+.listaCarrinho div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -203,19 +213,120 @@ aside {
     background-color: #F5F5F5;
     width: 100%;
     height: 214px;
-
 }
 
-.carrinhoDeCompras h2 {
+.listaCarrinho h2 {
     font-weight: 700;
     font-size: 22px;
     line-height: 24px;
     color: #292929;
 }
 
-.carrinhoDeCompras p {
+.listaCarrinho p {
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     color: #242424;
+}
+
+.listaCarrinho li {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 320px;
+    gap: 20px;
+    background-color: #F5F5F5;
+    margin-bottom: 20px;
+}
+
+.listaCarrinho li:hover {
+    border-color: transparent;
+}
+
+.listaCarrinho .containerImg {
+    width: 88px;
+    height: 92px;
+    object-fit: cover;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listaCarrinho .containerImg img {
+    width: 88px;
+}
+
+.listaCarrinho .containerImg img:hover {
+    transform: none;
+}
+
+
+.listaCarrinho .dadosProduto {
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5px;
+    width: 282px;
+    height: 92px;
+    margin: 0;
+    padding: 0 20px;
+    background-color: #F5F5F5;
+}
+
+.listaCarrinho .categoria {
+    display: none;
+}
+
+.listaCarrinho .descProduto {
+    display: none;
+}
+
+.listaCarrinho .nomeProduto {
+    font-size: 16px;
+}
+
+.listaCarrinho .btnAdicionarCarrinho {
+    background-color: #F5F5F5;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #242424;
+}
+
+.totais {
+    display: flex;
+    width: 100%;
+    height: 126px;
+    background: #292929;
+}
+
+.nomes {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    gap: 20px;
+    justify-content: center;
+    padding-left: 14px;
+}
+
+.valores {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #F5F5F5;
+    gap: 20px;
+    justify-content: center;
+    padding-right: 14px;
+}
+
+.naoMostrar{
+    display: none;
 }

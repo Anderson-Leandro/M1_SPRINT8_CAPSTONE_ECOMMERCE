@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/database.js"></script>
+    <script defer src="./js/index.js"></script>
     <title>Document</title>
 </head>
 
 <body>
-
     <header>
         <div class="container menu">
             <h1>Weartake</h1>
@@ -18,7 +19,7 @@
             <nav class="menu menuNav">
                 <a href="#">Todos</a>
                 <a href="#">Acessórios</a>
-                <a href="#">Calçados</a>
+                <a href="#">Blusas</a>
                 <a href="#">Camisetas</a>
             </nav>
         </div>
@@ -27,9 +28,9 @@
     <main class="container colunas">
 
         <section class="vitrine">
-            <ul class="lista">
+            <ul class="listaProduto">
 
-                <li class="itemLista">
+                <!-- <li class="itemLista">
                     <div class="containerImg">
                         <img src="./img/camiseta_preta.svg" alt="" class="imgProduto">
                     </div>
@@ -128,28 +129,46 @@
                         <span class="preco">R$ 100.00</span>
                         <button class="btnAdicionarCarrinho">Adicionar ao carrinho</button>
                     </div>
-                </li>
+                </li> -->
             </ul>
         </section>
 
         <aside>
+
             <div class="areaDePesquisa">
                 <input type="text" class="pesquisa" placeholder="Digite aqui sua pesquisa">
                 <button class="btnPesquisa">Pesquisar</button>
             </div>
+
             <div class="areaCarrinhoDeCompras">
                 <h2 class="tituloCarrinho">Carrinho de compras</h2>
-                <section class="carrinhoDeCompras">
 
-                    <H2>Carrinho Vázio</H2>
-                    <p>Adicione itens</p>
+                <section class="carrinhoDeCompras">
+                    <ul class="listaCarrinho">
+
+                        <div>
+                            <H2>Carrinho Vázio</H2>
+                            <p>Adicione itens</p>
+                        </div>                       
+
+                    </ul>
+
+                    <div class="totais naoMostrar">
+                        <div class="nomes">
+                            <p class="quantidade">Quantidade:</p>
+                            <p class="total">Total:</p>
+                        </div>
+
+                        <div class="valores">                            
+                           
+                        </div>
+
+                    </div>
 
                 </section>
             </div>
         </aside>
-
     </main>
-
 </body>
 
 </html>
