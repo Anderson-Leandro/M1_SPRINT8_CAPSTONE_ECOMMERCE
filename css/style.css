@@ -146,7 +146,7 @@ header div h1 {
     border: none;
     background-color: white;
     width: max-content;
-
+    cursor: pointer;
 }
 
 .btnAdicionarCarrinho:hover {
@@ -177,6 +177,7 @@ aside {
     background-color: #37268C;
     color: white;
     border: 1px solid #37268C;
+    cursor: pointer;
 }
 
 .btnPesquisa:hover {
